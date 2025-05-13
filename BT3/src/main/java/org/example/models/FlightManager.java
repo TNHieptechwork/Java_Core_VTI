@@ -53,7 +53,7 @@ public class FlightManager {
             return;
         }
         boolean flag = false;
-        System.out.printf("List of Flight's Passenger: \n" + passenger.getName());
+        System.out.printf("List of Flight's Passenger: " + passenger.getName() + "\n");
         for(Booking b : bookingList){
             if(b.getPassenger().getId().equals(passId)){
                 Flight f = b.getFlight();
@@ -114,7 +114,7 @@ public class FlightManager {
 
         if(keyMaxBooking != null){
             Flight maxBookedFlight = flightMap.get(keyMaxBooking);
-            System.out.println("Flight have max book \n");
+            System.out.println("Flight have max book: \n");
             System.out.println("Flight_ID: " + maxBookedFlight.getFlightId() + " | Origin: " + maxBookedFlight.getOrigin() +
                     " | Destination: " + maxBookedFlight.getDestination() + " | booking count " + valueMaxBooking +"\n");
         } else {
@@ -151,7 +151,7 @@ public class FlightManager {
 
         if(keyMaxPassId != null){
             Passenger maxPass = passengerMap.get(keyMaxPassId);
-            System.out.println("Passenger flight max \n");
+            System.out.println("Passenger flight max: \n");
             System.out.println("ID: " + maxPass.getId() + " | Name: " + maxPass.getName() + " | flight count: " + valueMaxPassId + "\n");
         }
         else {

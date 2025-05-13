@@ -13,6 +13,7 @@ public class Main {
         Passenger p1 = new Passenger("P01", "Nguyễn Văn A");
         Passenger p2 = new Passenger("P02", "Trần Thị B");
         Passenger p3 = new Passenger("P03", "Lê Văn C");
+
         manager.addPassenger(p1);
         manager.addPassenger(p2);
         manager.addPassenger(p3);
@@ -40,8 +41,11 @@ public class Main {
 
         // In danh sách chuyến bay của hành khách
         manager.printListFlightOfPassenger("P01");
+        manager.printListFlightOfPassenger("P02");
+        manager.printListFlightOfPassenger("P03");
 
         // In danh sách hành khách của chuyến bay
+        manager.printPassengerOfFlight("F01");
         manager.printPassengerOfFlight("F03");
 
         // Tìm chuyến bay được đặt nhiều nhất

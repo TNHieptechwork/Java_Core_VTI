@@ -18,8 +18,8 @@ public class CheckingAccount extends BankAccount{
 
     @Override
     public void withdraw(double amount) {
-        if(amount > withdrawLimit){
-            System.out.println("Amount must < withdrawLimit");
+        if(amount <= withdrawLimit){
+            System.out.println("Amount must <= withdrawLimit");
         }else{
             super.withdraw(amount);
         }
