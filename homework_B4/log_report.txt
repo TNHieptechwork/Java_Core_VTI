@@ -1,0 +1,6 @@
+=== Log Report ===
+INFO count: 5
+ERROR count: 5
+WARN count: 7
+Average time between INFO events: 00:21:35
+Average time between ERROR events: -2:-22:-13
